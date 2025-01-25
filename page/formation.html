@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDHEG - Formations </title>
+    <link rel="stylesheet" href="../asset/style.css">
+</head>
+<body>
+    <nav class="flex bottom-shadow between fixed w-100 v-center p-h no-toggled bg-white" id="header">
+        <h3 class="font flex v-center hold between w-100 p-w">
+            <div class="flex v-center hold"><img class="logo" src="../ressource/logoedhec.png">EDHEG</div>
+            <div class="menu-actions p-w">
+                <button class="p-0" id="no-toggled">
+                    <img class="ico" src="../ressource/menu-100.png">
+                </button>
+                <button class="p-0" id="toggled">
+                    <img src="../ressource/cross-100.png" class="ico">
+                </button>
+            </div>
+        </h3>
+        <div class="flex gap p-w font v-center links">
+            <a href="/">Accueil</a>
+            <a href="about.html">A&nbsp;propos</a>
+            <a  href="filiar.html">Filières</a>
+            <a class="active" href="">Formations</a>
+            <div class="flex gap v-center hold">
+                <a href="login.html" class="btn">Se&nbsp;connecter</a>
+            </div>
+        </div>
+    </nav>
+    <div class="p-top p flex v-center column font">
+        <div class="bg-home flex column v-center p w-100">
+            <div class="bg-ablue"></div>
+            <div class="z-100 text-center">
+                <img src="../ressource/logoedhec.png" class="logo-2">
+                <h2>Groupe EDHEG</h2>
+                <p class="p-style">Ecole Des Hautes Etudes en Gestion</p>
+            </div>
+        </div>
+        <div class="p w-100 bg-orange text-center">
+            Promotion: réduction de 50% sur les frais d'inscription !
+        </div>
+        <h2 class="text-center font p b-bottom">
+            Nos Formations
+        </h2>
+        <div class="flex between m-w w-100 hold">
+            <div class="flex hold">
+                <div class="p bg-lgrey b-top" id="btn-indus">Filière industrielle</div>
+                <div class="p bg-white b-top bottom-shadow" id="btn-terti">Filière tertiaire</div>
+            </div>
+        </div>
+        <div class="bg-white m-w w-100 bg-lgrey">
+            <div class="p bg-lgrey flex gap hold ">
+                <img src="../ressource/search-100.png" class="ico">
+                <input type="search" placeholder="rechercher une formation" >
+            </div>
+            <div id="indus">
+                <div class="p flex wrap gap">
+                    <div class="flex column gap bg-grey w p raduis">
+                        <h3>IDA - BTS</h3>
+                        <p>Informatique developpeur d'applications</p>
+                        <button>Voir plus</button>
+                    </div>
+                    <div class="flex column gap bg-grey w p raduis">
+                        <h3>Genie logiciel - License</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        <button>Voir plus</button>
+                    </div>
+                    <div class="flex column gap bg-grey w p raduis">
+                        <h3>Genie logiciel - Master</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        <button>Voir plus</button>
+                    </div>
+                    <div class="flex column gap bg-grey w p raduis">
+                        <h3>Logistique - BTS</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        <button>Voir plus</button>
+                    </div>
+                    <div class="flex column gap bg-grey w p raduis">
+                        <h3>Logistique - License</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        <button>Voir plus</button>
+                    </div>
+                    <div class="flex column gap bg-grey w p raduis">
+                        <h3>Logistique - Master</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        <button>Voir plus</button>
+                    </div>
+                </div>
+            </div>
+            <div id="terti" class="hidden">
+                <div class="p flex wrap gap">
+                    <div class="flex column gap bg-grey w p raduis">
+                        <h3>Ressource Humaine et Communication - BTS</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        <button>Voir plus</button>
+                    </div>
+                    <div class="flex column gap bg-grey w p raduis">
+                        <h3>Ressource Humaine et Communication - License</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        <button>Voir plus</button>
+                    </div>
+                    <div class="flex column gap bg-grey w p raduis">
+                        <h3>Gestion commerciale - BTS</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        <button>Voir plus</button>
+                    </div>
+                    <div class="flex column gap bg-grey w p raduis">
+                        <h3>Gestion commerciale - License</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        <button>Voir plus</button>
+                    </div>
+                    <div class="flex column gap bg-grey w p raduis">
+                        <h3>Finance Comptablité - BTS</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        <button>Voir plus</button>
+                    </div>
+                    <div class="flex column gap bg-grey w p raduis">
+                        <h3>Finance Comptablité - License</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        <button>Voir plus</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="flex column gap p m-top bg-grey font">
+        <div class="flex center gap hold">
+            <img src="../ressource/google-100.png" class="ico">
+            <img src="../ressource/facebook-100.png" class="ico">
+            <img src="../ressource/news-90.png" class="ico">
+            <img src="../ressource/instagram-100.png" class="ico">
+        </div>
+        <div class="flex between m-w text-white">
+            <div class="flex column b-right p w-100">
+                <h2>Liens utiles</h2>
+                <ul class="flex column gap">
+                    <li><a href="/">Accueil</a></li>
+                    <li><a href="">A propos</a></li>
+                    <li><a href="">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="flex column p w-100">
+                <h2>Contact</h2>
+                <ul class="flex column gap">
+                    <li>WhatsApp: +2** 68 57 45 **</li>
+                    <li>Tel fix: +2** 07 ** 45 05</li>
+                    <li>Tel portable: +2** 75 55 **</li>
+                </ul>
+            </div>
+        </div>
+        <div class="p text-center text-dgrey">
+            Tous droits reservé EDHEGsiteweb.com 2025-2026      
+        </div>
+    </footer>
+    <script src="../asset/script.js"></script>
+</body>
+</html>

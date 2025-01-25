@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDHEG - Connexion/Inscription</title>
+    <link rel="stylesheet" href="../asset/style.css">
+</head>
+<body>
+    <nav class="flex bottom-shadow between fixed w-100 v-center p-h no-toggled bg-white" id="header">
+        <h3 class="font flex v-center hold between w-100 p-w">
+            <div class="flex v-center hold"><img class="logo" src="../ressource/logoedhec.png">EDHEG</div>
+            <div class="menu-actions p-w">
+                <button class="p-0" id="no-toggled">
+                    <img class="ico" src="../ressource/menu-100.png">
+                </button>
+                <button class="p-0" id="toggled">
+                    <img src="../ressource/cross-100.png" class="ico">
+                </button>
+            </div>
+        </h3>
+        <div class="flex gap p-w font v-center links">
+            <a href="/">Accueil</a>
+            <a href="about.html">A&nbsp;propos</a>
+            <a href="filiar.html">Filières</a>
+            <a href="formation.html">Formations</a>
+            <div class="flex gap v-center hold">
+                <a href="login.html" class="btn">Se&nbsp;connecter</a>
+            </div>
+        </div>
+    </nav>
+    <div class="p-top p flex v-center column font">
+        <h2 class="text-center font p b-bottom" id="form_title">
+            Se connecter
+        </h2>
+        <div class="flex center m gap hold"> 
+            <div class="flex column v-center backdrop p raduis bottom-shadow font form selected" id="form1">
+                <p>Veuillez remplir les champs ci&nbsp;dessous:</p>   
+                <form method="get">
+                    <div class="flex column m">
+                        <label for="email">Email</label>
+                        <input class="input b-lgrey" type="email" id="email" name="email" placeholder="Entrer votre email" required>
+                    </div>
+                    <div class="flex column m">
+                        <label for="mdp">Mot de passe</label>
+                        <input class="input b-lgrey" type="password" id="mdp" name="mdp" placeholder="Entrer votre mot de passe" required>
+                    </div>
+                    <p class="text-center m">Ou connectez vous avec:</p>
+                    <div class="flex gap center m hold">
+                        <a href="#"><img class="ico" src="../ressource/facebook-100.png"></a>
+                        <a href="#"><img class="ico" src="../ressource/instagram-100.png"></a>
+                        <a href="#"><img class="ico" src="../ressource/google-100.png"></a>          
+                    </div>
+                    <div class="flex between m">
+                        <div class="flex between">
+                            <input class="btn m" type="submit" id="login" value="Se connecter">
+                            <input class="btn m" type="reset" value="Annuler">
+                        </div>
+                        <input class="btn m" type="button" value="S'inscrire" id="to_form2">
+                    </div>
+                </form>
+            </div>
+            <div class="flex column v-center backdrop p raduis bottom-shadow font form" id="form2">
+                <p>Veuillez remplir les champs ci&nbsp;dessous:</p>   
+                <form action="../index.html" method="get" id="sign_in_form">
+                    <div class="flex center gap m">
+                        <div class="flex column w-100">
+                            <label for="nom">Nom</label>
+                            <input class="input b-lgrey" id="nom" name="nom" type="text" placeholder="Entrer votre nom" required>
+                        </div>
+                        <div class="flex column w-100">
+                            <label for="prenom">Prenom</label>
+                            <input class="input b-lgrey" id="prenom" name="prenom" type="text" placeholder="Entrer votre prenom" required>
+                        </div>
+                    </div>
+                    <div class="flex column m">
+                        <label for="s_email">Email</label>
+                        <input class="input b-lgrey" type="email" id="s_email" name="email" placeholder="Entrer votre email" required>
+                    </div>
+                    <div class="flex column m">
+                        <label for="s_mdp">Mot de passe</label>
+                        <input class="input b-lgrey" type="password" id="s_mdp" name="mdp" placeholder="Entrer votre mot de passe" required>
+                    </div>
+                    <p class="text-center m">Ou inscrivez vous avec:</p>
+                    <div class="flex gap center m hold">
+                        <a href="#"><img class="ico" src="../ressource/facebook-100.png"></a>
+                        <a href="#"><img class="ico" src="../ressource/instagram-100.png"></a>
+                        <a href="#"><img class="ico" src="../ressource/google-100.png"></a>          
+                    </div>
+                    <div class="flex between m">
+                        <div class="flex between">
+                            <input class="btn m" type="submit" id="sign_in" value="S'inscrire">
+                            <input class="btn m" type="reset" value="Annuler">
+                        </div>
+                        <input class="btn m" type="button" value="Se connecter" id="to_form1">
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+    </div>
+    <footer class="flex column gap p m-top bg-grey font">
+        <div class="flex center gap hold">
+            <img src="../ressource/google-100.png" class="ico">
+            <img src="../ressource/facebook-100.png" class="ico">
+            <img src="../ressource/news-90.png" class="ico">
+            <img src="../ressource/instagram-100.png" class="ico">
+        </div>
+        <div class="flex between m-w text-white">
+            <div class="flex column b-right p w-100">
+                <h2>Liens utiles</h2>
+                <ul class="flex column gap">
+                    <li><a href="/">Accueil</a></li>
+                    <li><a href="">A propos</a></li>
+                    <li><a href="">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="flex column p w-100">
+                <h2>Contact</h2>
+                <ul class="flex column gap">
+                    <li>WhatsApp: +2** 68 57 45 **</li>
+                    <li>Tel fix: +2** 07 ** 45 05</li>
+                    <li>Tel portable: +2** 75 55 **</li>
+                </ul>
+            </div>
+        </div>
+        <div class="p text-center text-dgrey">
+            Tous droits reservé EDHEGsiteweb.com 2025-2026      
+        </div>
+    </footer>
+    <script src="../asset/script.js"></script>
+</body>
+</html>

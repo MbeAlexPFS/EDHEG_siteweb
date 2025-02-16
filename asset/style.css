@@ -179,6 +179,7 @@ nav {
 }
 
 .bg-home {
+    background-attachment: fixed;
     background-image: url("../ressource/etabli1.jpg");
     background-repeat: no-repeat;
     background-size: cover;

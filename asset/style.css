@@ -1,3 +1,5 @@
+
+
 body {
     margin: 0;
 }
@@ -16,6 +18,14 @@ h3 {
 
 .fixed {
     position: fixed;
+}
+
+.right {
+    left: 80%;
+}
+
+.bottom {
+    top: 90%;
 }
 
 .p {
@@ -73,6 +83,11 @@ h3 {
 .text-center {
     text-align: center;
 }
+
+.text-end {
+    text-align: end;
+}
+
 
 .text-white {
     color: white;
@@ -189,10 +204,10 @@ nav {
 
 .bg-ablue {
     position: absolute;
-    background-color: rgba(0, 0, 255, 0.341);
+    background-color: rgba(0, 0, 0, 0.753);
     width: 100vw;
     height: 490.5px;
-    top: 95.5px;
+    top: 0;
 }
 
 .bg-lblue {
@@ -258,9 +273,26 @@ nav {
     border-radius: 20px;
 }
 
+.raduis-100 {
+    border-radius: 100%;
+}
+
 .bg-blue {
     background-color: deepskyblue;
     color: white;
+}
+
+.bg-black {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.bg-black a {
+    color: white;
+}
+
+.bg-black .active {
+    border-bottom: 2px solid rgb(255, 255, 255);
 }
 
 .h {
@@ -294,8 +326,52 @@ input, textarea, select {
     justify-content: start;
 }
 
+.overflow-x-hidden {
+    width: 80%;
+    overflow-x: hidden;
+    justify-content: start;
+}
+
+.loop-h {
+    position: relative;
+    animation: loopH 10s infinite;
+}
+
+@keyframes loopH {
+    0% {
+        left: -100%;
+    }
+    50% {
+        left: 100%;
+    }
+    50.1% {
+        left: -100%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+.popup-content {
+    width: 60vw;
+    height: 50vh;
+    overflow-y: auto;
+}
+
+.popup {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 200;
+    background-color: rgba(0, 0, 0, 0.896);
+    width: 100%;
+    height: 100%;
+}
+
 .overflow-y {
-    width: 90%;
+    width: 100%;
     height: 600px;
     overflow-y: auto;
     align-items: start;
@@ -326,9 +402,12 @@ input, textarea, select {
 }
 
 body {
-    background-image: url("../ressource/bg.jpg");
-    background-size: cover;
+    background-image: url("../ressource/bg2.jpg");
+    background-size: 50%;
+    background-repeat: repeat;
     background-attachment: fixed;
+    color: white;
+    text-shadow: 0 0 20px blue;
 }
 
 .hidden {
@@ -354,6 +433,46 @@ body {
 
 .b-lgrey {
     border: 2px solid lightgrey;
+}
+
+
+.shadow-orange {
+    box-shadow: 0 0 25px orange;
+    text-shadow: 0 0 25px orange;
+}
+
+.shadow-white {
+    box-shadow: 0 0 25px white;
+    text-shadow: 0 0 25px rgb(255, 255, 255);
+}
+
+.shadow-green {
+    box-shadow: 0 0 25px green;
+    text-shadow: 0 0 25px green;
+}
+
+.danger {
+    background-color: red;
+    color: white;
+    text-shadow: none;
+}
+
+.success {
+    background-color: green;
+    color: white;
+    text-shadow: none;
+}
+
+th {
+    background-color: orangered;
+    border: 2px solid white;
+    padding: 10px;
+    text-shadow: none;
+}
+
+td {
+    text-shadow: none;
+    padding: 10px;
 }
 
 @media screen and (max-width: 720px) {
@@ -389,4 +508,95 @@ body {
     .no-toggled {
         gap: 0;
     }
+
 }
+
+.bg-rects {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -100;
+}
+
+.rect {
+    animation: var1 alternate-reverse 5s infinite ;
+}
+
+.rect2 {
+    animation: var2 alternate-reverse 4s infinite ;
+}
+
+.rect3 {
+    animation: var3 alternate-reverse 3s infinite ;
+}
+
+@keyframes var1 {
+    0% {
+        width: 30vw;
+        height: 30vw;
+        border: 8px solid blue;
+        border-radius: 50px;
+        position: absolute;
+        transform: rotate(-75deg);
+        box-shadow: 0 0 20px rgb(96, 191, 255);    
+    } 
+    
+    100% {
+        width: 20vw;
+        height: 20vw;
+        border: 8px solid rgb(0, 0, 98);
+        border-radius: 50px;
+        position: absolute;
+        transform: rotate(calc(75deg + 360deg));
+        box-shadow: 0 0 20px rgb(41, 26, 255);
+    }
+}
+
+@keyframes var2 {
+    0% {
+        width: 30vw;
+        height: 30vw;
+        border: 8px solid rgb(111, 255, 0);
+        border-radius: 50px;
+        position: absolute;
+        transform: rotate(60deg);
+        box-shadow: 0 0 20px rgb(96, 255, 167);    
+    } 
+    
+    100% {
+        width: 35vw;
+        height: 35vw;
+        border: 8px solid rgb(0, 98, 38);
+        border-radius: 100px;
+        position: absolute;
+        transform: rotate( calc(60deg + 360deg) );
+        box-shadow: 0 0 20px rgb(26, 255, 79);
+    }
+}
+
+@keyframes var3 {
+    0% {
+        width: 30vw;
+        height: 30vw;
+        border: 8px solid rgb(255, 72, 0);
+        border-radius: 50px;
+        position: absolute;
+        transform: rotate(-45deg);
+        box-shadow: 0 0 20px rgb(255, 96, 96);    
+    } 
+    
+    100% {
+        width: 35vw;
+        height: 35vw;
+        border: 8px solid rgb(98, 0, 0);
+        border-radius: 200px;
+        position: absolute;
+        transform: rotate( calc(-45deg - 360deg) );
+        box-shadow: 0 0 20px rgb(255, 57, 26);
+    }
+}
+
+

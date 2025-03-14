@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="asset/style.css">
 </head>
 <body>
-    <nav class="flex bottom-shadow between fixed w-100 v-center p-h no-toggled bg-white" id="header">
+    <nav class="flex bottom-shadow between fixed v-center p-h no-toggled bg-black raduis m" id="header">
         <h3 class="font flex v-center hold between w-100 p-w">
             <div class="flex v-center hold"><img class="logo" src="ressource/logoedhec.png">EDHEG</div>
             <div class="menu-actions p-w">
@@ -29,22 +29,34 @@
             </div>
         </div>
     </nav>
-    <div class="p-top p flex v-center column font">
-        <div class="bg-home flex column v-center p w-100">
+    <div class="flex v-center column font">
+        <div class="bg-home flex column v-end p w-100">
             <div class="bg-ablue"></div>
-            <div class="z-100 text-center">
+            <div class="z-100 text-end">
                 <img src="ressource/logoedhec.png" class="logo-2">
                 <h2>Groupe EDHEG</h2>
                 <p class="p-style">Ecole Des Hautes Etudes en Gestion</p>
             </div>
         </div>
-        <div class="p w-100 bg-orange text-center">
+        <div class="p w-100 bg-blue text-center">
             Promotion: réduction de 50% sur les frais d'inscription !
         </div>
         <h2 class="text-center font p b-bottom">
             Présentation 
         </h2>
-        <p class="m m-w text-center">
+        <p class="m m-w text-end">
+            <em>Créé en Novembre 2004, le Groupe EDHEG-Abidjan est constitué de trois (03) écoles aujourd'hui à savoir :
+            EDHEG-Abidjan, EDHEG-Bouaké et EDHEG-San&nbsp;Pedro.</em></br><br>
+            Le Groupe EDHEG-Abidjan est spécialisé dans la formation: des Commerciaux, des Gestionnaires d’Entreprise, des Juristes d’Entreprise, des Comptables et Financiers et des Informaticiens.
+            Il a pour vocation de former des Cadres gestionnaires et Dirigeants d’entreprise via une formation polyvalente et opérationnelle de haut niveau et une préparation aux métiers de décideurs à travers des séminaires, alternance école-entreprise, stages de fin d’étude.
+        </p>
+        <p class="m m-w text-center text-lblue">
+            <em>Créé en Novembre 2004, le Groupe EDHEG-Abidjan est constitué de trois (03) écoles aujourd'hui à savoir :
+            EDHEG-Abidjan, EDHEG-Bouaké et EDHEG-San&nbsp;Pedro.</em></br><br>
+            Le Groupe EDHEG-Abidjan est spécialisé dans la formation: des Commerciaux, des Gestionnaires d’Entreprise, des Juristes d’Entreprise, des Comptables et Financiers et des Informaticiens.
+            Il a pour vocation de former des Cadres gestionnaires et Dirigeants d’entreprise via une formation polyvalente et opérationnelle de haut niveau et une préparation aux métiers de décideurs à travers des séminaires, alternance école-entreprise, stages de fin d’étude.
+        </p>
+        <p class="m m-w ">
             <em>Créé en Novembre 2004, le Groupe EDHEG-Abidjan est constitué de trois (03) écoles aujourd'hui à savoir :
             EDHEG-Abidjan, EDHEG-Bouaké et EDHEG-San&nbsp;Pedro.</em></br><br>
             Le Groupe EDHEG-Abidjan est spécialisé dans la formation: des Commerciaux, des Gestionnaires d’Entreprise, des Juristes d’Entreprise, des Comptables et Financiers et des Informaticiens.
@@ -54,23 +66,28 @@
             Nos formations et filières 
         </h2>
         <div class="flex center m-w gap hold">
-            <div class="flex center wrap gap">
-                <div class="flex column w">
-                    <img class="img" src="ressource/i-informatique.jpg">
-                    <div class="text-center bg-grey p">Informatique</div>
+            <div class="">
+                <div class="flex gap">
+                    <div class="flex column w">
+                        <img class="img logo-2" src="ressource/i-informatique.jpg">
+                        <div class="text-center bg-grey p raduis">Informatique</div>
+                    </div>
+                    <div class="flex column w">
+                        <img class="img logo-2" src="ressource/i-rhcom.jpg">
+                        <div class="text-center bg-grey p raduis">Ressource Humaine et Communication (RHCOM)</div>
+                    </div>
                 </div>
-                <div class="flex column w">
-                    <img class="img" src="ressource/i-rhcom.jpg">
-                    <div class="text-center bg-grey p">Ressource Humaine et Communication (RHCOM)</div>
+                <div class="flex gap">
+                    <div class="flex column w">
+                        <img class="img logo-2" src="ressource/i-gescom.jpg">
+                        <div class="text-center bg-grey p raduis">Gestion Commerciale (GESCOM)</div>
+                    </div>
+                    <div class="flex column w">
+                        <img class="img logo-2" src="ressource/i-fc.jpg">
+                        <div class="text-center bg-grey p raduis">Finance & Comptabilité (FC)</div>
+                    </div>
                 </div>
-                <div class="flex column w">
-                    <img class="img" src="ressource/i-gescom.jpg">
-                    <div class="text-center bg-grey p">Gestion Commerciale (GESCOM)</div>
-                </div>
-                <div class="flex column w">
-                    <img class="img" src="ressource/i-fc.jpg">
-                    <div class="text-center bg-grey p">Finance & Comptabilité (FC)</div>
-                </div>
+                
             </div>
             <div class="flex column between m">
                 <ul class="text-lblue">
@@ -88,43 +105,12 @@
                 
             </div> 
         </div>
-        <h2 class="text-center font p b-bottom">
-            Nos statistiques
-        </h2>
-        <div class="flex wrap center m-w gap hold">
-            <div class="flex column w text-center">
-                <div class="flex center gap v-center">
-                    <img class="img-2" src="ressource/graduation-cap-90.png">
-                    <h1>2500</h1>
-                </div>
-                <div class="text-center bg-grey p">Etudiants</div>
-            </div>
-            <div class="flex column w text-center">
-                <div class="flex center gap v-center">
-                    <img class="img-2" src="ressource/professor-100.png">
-                    <h1>80</h1>
-                </div>
-                <div class="text-center bg-grey p">Enseignants</div>
-            </div>
-            <div class="flex column w text-center">
-                <div class="flex center gap v-center">
-                    <img class="img-2" src="ressource/succes-67.png">
-                    <h1>98</h1>
-                </div>
-                <div class="text-center bg-grey p">Taux de réussite</div>
-            </div>
-            <div class="flex column w text-center">
-                <div class="flex center gap v-center">
-                    <img class="img-2" src="ressource/course-100.png">
-                    <h1>10</h1>
-                </div>
-                <div class="text-center bg-grey p">Filières</div>
-            </div>
-        </div>
+        
         <h2 class="text-center font p b-bottom">
             Notre directeur
         </h2>
-        <div class="flex between m-w">
+        <div class="flex column between m-w">
+            <img class="h logo-2" src="ressource/fondateurap.jpg">
             <div class="bg-blue p raduis">
                 <h1>Dr. Paul DAKUYO</h1>
                 <h3>Président-directeur général</h3>
@@ -136,13 +122,12 @@
                     </br>
                     le secteur éducatif, il incarne les valeurs d'excellence et de dévouement.</p>
             </div>
-            <img class="h" src="ressource/fondateurap.jpg">
         </div>
         <h2 class="text-center font p b-bottom">
             Les avis
         </h2>
-        <div class="flex gap between m-w">
-            <div class="flex wrap gap center">
+        <div class="flex column gap between m-w">
+            <div class="flex gap overflow-y h">
                 <div class="flex column gap m p font sized bg-grey raduis bottom-shadow sized">
                     <div class="flex between gap p">
                         <div>Mbe A**x</div>
@@ -193,6 +178,7 @@
                     </div>
                 </div>
             </div>
+            
             <div class="text-center">
 
                 <h3><em>Vous aussi votre avis compte !</em></h3>
@@ -234,26 +220,85 @@
             </div>
         </div>
         <h2 class="text-center font p b-bottom">
+            Nos statistiques
+        </h2>
+        <div class="flex wrap center m-w gap hold">
+            <div class="flex column w text-center shadow-orange bg-white">
+                <div class="flex center gap v-center">
+                    <img class="img-2" src="ressource/graduation-cap-90.png">
+                    <h1>2500</h1>
+                </div>
+                <div class="text-center bg-grey p">Etudiants</div>
+            </div>
+            <div class="flex column w text-center shadow-white bg-white">
+                <div class="flex center gap v-center">
+                    <img class="img-2" src="ressource/professor-100.png">
+                    <h1>80</h1>
+                </div>
+                <div class="text-center bg-grey p">Enseignants</div>
+            </div>
+            <div class="flex column w text-center shadow-green bg-white">
+                <div class="flex center gap v-center">
+                    <img class="img-2" src="ressource/succes-67.png">
+                    <h1>98</h1>
+                </div>
+                <div class="text-center bg-grey p">Taux de réussite</div>
+            </div>
+            <div class="flex column w text-center shadow-white bg-white">
+                <div class="flex center gap v-center">
+                    <img class="img-2" src="ressource/course-100.png">
+                    <h1>10</h1>
+                </div>
+                <div class="text-center bg-grey p">Filières</div>
+            </div>
+        </div>
+        <h2 class="text-center font p b-bottom">
             Nos partenaires
         </h2>
-        <div class="flex overflow-x gap center hold">
-            <img src="ressource/partenaire/ae.png" class="logo-3">
-            <img src="ressource/partenaire/ageroute.png" class="logo-3">
-            <img src="ressource/partenaire/cci.jpg" class="logo-3">
-            <img src="ressource/partenaire/hydrau.jpeg" class="logo-3">
-            <img src="ressource/partenaire/impulse.jpg" class="logo-3">
-            <img src="ressource/partenaire/invertiseurpartenaire.jpg" class="logo-3">
-            <img src="ressource/partenaire/lifescoul.jpg" class="logo-3">
-            <img src="ressource/partenaire/logo-fdfp.png" class="logo-3">
-            <img src="ressource/partenaire/logo_amethis.png" class="logo-3">
-            <img src="ressource/partenaire/Logo_BICICI.png" class="logo-3">
-            <img src="ressource/partenaire/longc.png" class="logo-3">
-            <img src="ressource/partenaire/mage.png" class="logo-3">
-            <img src="ressource/partenaire/mastercard.jpg" class="logo-3">
-            <img src="ressource/partenaire/mgtelecom.jpg" class="logo-3">
-            <img src="ressource/partenaire/Novartis.png" class="logo-3">
-            <img src="ressource/partenaire/union.jpeg" class="logo-3">
+        <div class="flex overflow-x-hidden gap center hold">
+            <img src="ressource/partenaire/ae.png" class="logo-3 loop-h">
+            <img src="ressource/partenaire/ageroute.png" class="logo-3 loop-h">
+            <img src="ressource/partenaire/cci.jpg" class="logo-3 loop-h">
+            <img src="ressource/partenaire/hydrau.jpeg" class="logo-3 loop-h">
+            <img src="ressource/partenaire/impulse.jpg" class="logo-3 loop-h">
+            <img src="ressource/partenaire/invertiseurpartenaire.jpg" class="logo-3 loop-h">
+            <img src="ressource/partenaire/lifescoul.jpg" class="logo-3 loop-h">
+            <img src="ressource/partenaire/logo-fdfp.png" class="logo-3 loop-h">
+            <img src="ressource/partenaire/logo_amethis.png" class="logo-3 loop-h">
+            <img src="ressource/partenaire/Logo_BICICI.png" class="logo-3 loop-h">
+            <img src="ressource/partenaire/longc.png" class="logo-3 loop-h">
+            <img src="ressource/partenaire/mage.png" class="logo-3 loop-h">
+            <img src="ressource/partenaire/mastercard.jpg" class="logo-3 loop-h">
+            <img src="ressource/partenaire/mgtelecom.jpg" class="logo-3 loop-h">
+            <img src="ressource/partenaire/Novartis.png" class="logo-3 loop-h">
+            <img src="ressource/partenaire/union.jpeg" class="logo-3 loop-h">
+            
         </div>
+        <div class="popup" style="display: none;">
+            <div class="popup-content bg-white p flex wrap gap center hold">
+                <div class="flex end w-100">
+                    <button onclick="closepopup('.popup')">Fermer</button>
+                </div>
+                <img src="ressource/partenaire/ae.png" class="logo-3">
+                <img src="ressource/partenaire/ageroute.png" class="logo-3">
+                <img src="ressource/partenaire/cci.jpg" class="logo-3">
+                <img src="ressource/partenaire/hydrau.jpeg" class="logo-3">
+                <img src="ressource/partenaire/impulse.jpg" class="logo-3">
+                <img src="ressource/partenaire/invertiseurpartenaire.jpg" class="logo-3">
+                <img src="ressource/partenaire/lifescoul.jpg" class="logo-3">
+                <img src="ressource/partenaire/logo-fdfp.png" class="logo-3">
+                <img src="ressource/partenaire/logo_amethis.png" class="logo-3">
+                <img src="ressource/partenaire/Logo_BICICI.png" class="logo-3">
+                <img src="ressource/partenaire/longc.png" class="logo-3">
+                <img src="ressource/partenaire/mage.png" class="logo-3">
+                <img src="ressource/partenaire/mastercard.jpg" class="logo-3">
+                <img src="ressource/partenaire/mgtelecom.jpg" class="logo-3">
+                <img src="ressource/partenaire/Novartis.png" class="logo-3">
+                <img src="ressource/partenaire/union.jpeg" class="logo-3">
+                
+            </div>
+        </div>
+        <button onclick="openpopup('.popup')">Agrandir</button>
         <h2 class="text-center font p b-bottom">
             Gallerie
         </h2>
@@ -297,16 +342,22 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae natus blanditiis, distinctio accusantium sapiente ad maiores nobis accusamus ex nesciunt exercitationem quasi vel incidunt, eum inventore odit soluta voluptatibus laborum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui nobis tempore ab eligendi. Voluptatum quae aspernatur, ipsum omnis est nesciunt at quas porro adipisci, perspiciatis alias consectetur odit labore sint!</p>
                     <div class="flex end gap p hold">
                         <div class="flex gap-2 v-center">
-                            <img src="ressource/like-100.png" class="ico" alt="">
-                            10
+                            <img src="ressource/like-100.png" class="ico" alt="" id="ico1" onclick="increment('#like1',1,[1,'#ico1'])">
+                            <div id="like1">
+                                10
+                            </div>
                         </div>
                         <div class="flex gap-2 v-center">
-                            <img src="ressource/love-96.png" class="ico" alt="">
-                            5
+                            <img src="ressource/love-96.png" class="ico" alt="" id="ico2" onclick="increment('#like2',1,[1,'#ico2'])">
+                            <div id="like2">
+                                10
+                            </div>
                         </div>
                         <div class="flex gap-2 v-center">
-                            <img src="ressource/view-90.png" class="ico" alt="">
-                            100
+                            <img src="ressource/view-90.png" class="ico" alt="" id="ico3" onclick="increment('#like3',1,[1,'#ico3'])">
+                            <div id="like3">
+                                10
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -321,16 +372,22 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae natus blanditiis, distinctio accusantium sapiente ad maiores nobis accusamus ex nesciunt exercitationem quasi vel incidunt, eum inventore odit soluta voluptatibus laborum. </p>
                     <div class="flex end gap p hold">
                         <div class="flex gap-2 v-center">
-                            <img src="ressource/like-100.png" class="ico" alt="">
-                            20
+                            <img src="ressource/like-100.png" class="ico" alt="" id="ico4" onclick="increment('#like4',1,[1,'#ico4'])">
+                            <div id="like4">
+                                10
+                            </div>
                         </div>
                         <div class="flex gap-2 v-center">
-                            <img src="ressource/love-96.png" class="ico" alt="">
-                            10
+                            <img src="ressource/love-96.png" class="ico" alt="" id="ico5" onclick="increment('#like5',1,[1,'#ico5'])">
+                            <div id="like5">
+                                10
+                            </div>
                         </div>
                         <div class="flex gap-2 v-center">
-                            <img src="ressource/view-90.png" class="ico" alt="">
-                            1000
+                            <img src="ressource/view-90.png" class="ico" alt="" id="ico6" onclick="increment('#like6',1,[1,'#ico6'])">
+                            <div id="like6">
+                                10
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -345,16 +402,22 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae natus blanditiis, distinctio accusantium sapiente ad maiores nobis accusamus ex nesciunt exercitationem quasi vel incidunt, eum inventore odit soluta voluptatibus laborum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui nobis tempore ab eligendi. Voluptatum quae aspernatur, ipsum omnis est nesciunt at quas porro adipisci, perspiciatis alias consectetur odit labore sint!</p>
                     <div class="flex end gap p hold">
                         <div class="flex gap-2 v-center">
-                            <img src="ressource/like-100.png" class="ico" alt="">
-                            2
+                            <img src="ressource/like-100.png" class="ico" alt="" id="ico7" onclick="increment('#like7',1,[1,'#ico7'])">
+                            <div id="like7">
+                                10
+                            </div>
                         </div>
                         <div class="flex gap-2 v-center">
-                            <img src="ressource/love-96.png" class="ico" alt="">
-                            1
+                            <img src="ressource/love-96.png" class="ico" alt="" id="ico8" onclick="increment('#like8',1,[1,'#ico8'])">
+                            <div id="like8">
+                                10
+                            </div>
                         </div>
                         <div class="flex gap-2 v-center">
-                            <img src="ressource/view-90.png" class="ico" alt="">
-                            10
+                            <img src="ressource/view-90.png" class="ico" alt="" id="ico9" onclick="increment('#like9',1,[1,'#ico9'])">
+                            <div id="like9">
+                                10
+                            </div>
                         </div>
                     </div>
                 </div>

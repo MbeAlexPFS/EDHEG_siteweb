@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../asset/style.css">
 </head>
 <body>
-    <nav class="flex bottom-shadow between fixed w-100 v-center p-h no-toggled bg-white" id="header">
+    <nav class="flex bottom-shadow between fixed v-center p-h no-toggled bg-black raduis m" id="header">
         <h3 class="font flex v-center hold between w-100 p-w">
             <div class="flex v-center hold"><img class="logo" src="../ressource/logoedhec.png">EDHEG</div>
             <div class="menu-actions p-w">
@@ -20,19 +20,19 @@
             </div>
         </h3>
         <div class="flex gap p-w font v-center links">
-            <a href="/">Accueil</a>
+            <a  href="/">Accueil</a>
             <a href="about.html">A&nbsp;propos</a>
-            <a class="active" href="">Filières</a>
+            <a class="active" href="filiar.html">Filières</a>
             <a href="formation.html">Formations</a>
             <div class="flex gap v-center hold">
                 <a href="login.html" class="btn">Se&nbsp;connecter</a>
             </div>
         </div>
     </nav>
-    <div class="p-top p flex v-center column font">
-        <div class="bg-home flex column v-center p w-100">
+    <div class="flex v-center column font">
+        <div class="bg-home flex column v-end p w-100">
             <div class="bg-ablue"></div>
-            <div class="z-100 text-center">
+            <div class="z-100 text-end">
                 <img src="../ressource/logoedhec.png" class="logo-2">
                 <h2>Groupe EDHEG</h2>
                 <p class="p-style">Ecole Des Hautes Etudes en Gestion</p>
@@ -47,34 +47,42 @@
         <div class="flex m-w between gap">
             <div class="flex column gap v-center bg-white bottom-shadow p">
                 <img src="../ressource/indus.jpg" class="logo-2">
-                <h2 class="bg-blue w-100 p">Filière industrielle</h2>
-                <p class="p">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt rem fuga eaque dolor quasi, quaerat exercitationem pariatur sed unde cum eius officiis perferendis qui, minus praesentium ab. Illum, tenetur maxime.
-                </p>
-                <h3 class="w-100 text-lblue">Matières:</h3>
-                <ul class="w-100">
-                    <li>Informatique</li>
-                    <li>Logistique</li>
-                </ul>
-                <div class="flex end w-100">
-                    <a href="formation.html" class="btn">Voir les formations</a>
-                </div>
+                <details>
+                    <summary><h2 class="bg-blue w-100 p">Filière industrielle</h2></summary>
+                    <p class="p">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt rem fuga eaque dolor quasi, quaerat exercitationem pariatur sed unde cum eius officiis perferendis qui, minus praesentium ab. Illum, tenetur maxime.
+                    </p>
+                    <h3 class="w-100 text-lblue">Matières:</h3>
+                    <ul class="w-100">
+                        <li>Informatique</li>
+                        <li>Logistique</li>
+                    </ul>
+                    <div class="flex end w-100">
+                        <a href="formation.html" class="btn">Voir les formations</a>
+                    </div>
+                </details>
+                
+                
             </div>
             <div class="flex column gap v-center bg-white bottom-shadow p">
                 <img src="../ressource/terti.jpg" class="logo-2">
-                <h2 class="bg-blue w-100 p">Filière tertiaire</h2>
-                <p class="p">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt rem fuga eaque dolor quasi, quaerat exercitationem pariatur sed unde cum eius officiis perferendis qui, minus praesentium ab. Illum, tenetur maxime.
-                </p>
-                <h3 class="w-100 text-lblue">Matières:</h3>
-                <ul class="w-100">
-                    <li>Ressource Humaine</li>
-                    <li>Finance et Comptablité</li>
-                    <li>Gestion Commerciale</li>
-                </ul>
-                <div class="flex end w-100">
-                    <a href="formation.html" class="btn">Voir les formations</a>
-                </div>
+                <details>
+                    <summary><h2 class="bg-blue w-100 p">Filière tertiaire</h2></summary>
+                    
+                    <p class="p">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt rem fuga eaque dolor quasi, quaerat exercitationem pariatur sed unde cum eius officiis perferendis qui, minus praesentium ab. Illum, tenetur maxime.
+                    </p>
+                    <h3 class="w-100 text-lblue">Matières:</h3>
+                    <ul class="w-100">
+                        <li>Ressource Humaine</li>
+                        <li>Finance et Comptablité</li>
+                        <li>Gestion Commerciale</li>
+                    </ul>
+                    <div class="flex end w-100">
+                        <a href="formation.html" class="btn">Voir les formations</a>
+                    </div>
+                </details>
+               
             </div>
         </div>
     </div>

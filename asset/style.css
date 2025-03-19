@@ -68,6 +68,10 @@ h3 {
     flex-wrap: wrap;
 }
 
+.no-wrap {
+    flex-wrap: nowrap;
+}
+
 .v-center {
     align-items: center;
 }
@@ -215,7 +219,7 @@ nav {
 }
 
 .bg-lgrey {
-    background-color:gainsboro;
+    background-color:rgb(67, 67, 67);
 }
 
 .b-top {
@@ -253,8 +257,9 @@ nav {
 }
 
 .bg-grey {
-    background-color: gray;
+    background-color: rgb(22, 22, 22);
     color: white;
+    text-shadow: 0 0 20px white;
 }
 
 .w {
@@ -334,21 +339,15 @@ input, textarea, select {
 
 .loop-h {
     position: relative;
-    animation: loopH 10s infinite;
+    animation: loopH 10s linear infinite;
 }
 
 @keyframes loopH {
     0% {
-        left: -100%;
-    }
-    50% {
-        left: 100%;
-    }
-    50.1% {
-        left: -100%;
+        transform: translateX(-22vw);
     }
     100% {
-        left: 100%;
+        transform: translateX(-200vw);
     }
 }
 

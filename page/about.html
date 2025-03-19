@@ -42,7 +42,7 @@
                         </div>
                         <div class="flex column">
                             <label for="email">Email</label>
-                            <input class="input" id="email" type="text" name="email" required>
+                            <input class="input" id="email" type="email" name="email" required>
                         </div>
                     </div>
                     <div class="flex column w-100">
@@ -53,10 +53,10 @@
                         Commentaire inapproprié detecté
                     </div>
                     <div class="info p w-2 m success" style="display: none;">
-                        Commentaire sains
+                        Commentaire sains, prêt à l'envoi
                     </div>
                     <div class="flex end m">
-                        <button onclick="checkComment(['#objet', '#mes'],'.danger','.success')">Envoyer</button>
+                        <button id="submit">Envoyer</button>
                     </div>
             </form>
             

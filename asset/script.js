@@ -103,9 +103,18 @@ function increment(element,inc,once) {
 }
 
 //verification commentaire 2func
-function checkComment(toverify,ondanger,onsuccess) {
+if (document.querySelector('#objet') != undefined) {
+    ['#objet', '#mes'].forEach(element => {
+        document.querySelector(element).onchange = () => {
+            checkComment(['#objet', '#mes'],'.danger','.success','#submit')
+        }
+    })
+}
+
+function checkComment(toverify,ondanger,onsuccess,sendbtn) {
     let success = true
     let found = []
+    let btn = document.querySelector(sendbtn)
     const grosMots = [
         "putain", "merde", "con", "connard", "salope", "pute", "enculé", 
         "bite", "couille", "cul", "foutre", "baise", "enfoiré", "bordel", 
@@ -125,6 +134,7 @@ function checkComment(toverify,ondanger,onsuccess) {
     if (success) {
         document.querySelector(onsuccess).style.display = "initial"
         document.querySelector(ondanger).style.display = "none"
+        btn.style.display = "initial"
     }else {
         document.querySelector(onsuccess).style.display = "none"
         document.querySelector(ondanger).style.display = "initial"
@@ -133,6 +143,7 @@ function checkComment(toverify,ondanger,onsuccess) {
             document.querySelector(ondanger).innerHTML += '<li>'+fgm+'</li>'  
         }
         document.querySelector(ondanger).innerHTML += '</ul>'
+        btn.style.display = "none";
     }
 }
 

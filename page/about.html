@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../asset/style.css">
 </head>
 <body>
-    <nav class="flex bottom-shadow between fixed w-100 v-center p-h no-toggled bg-white" id="header">
+    <nav class="flex bottom-shadow between fixed v-center p-h no-toggled bg-black raduis m" id="header">
         <h3 class="font flex v-center hold between w-100 p-w">
             <div class="flex v-center hold"><img class="logo" src="../ressource/logoedhec.png">EDHEG</div>
             <div class="menu-actions p-w">
@@ -29,10 +29,43 @@
             </div>
         </div>
     </nav>
-    <div class="p-top p flex v-center column font">
-        <div class="bg-home flex column v-center p w-100">
+    <div class="popup" style="display: none;">
+        <div class="popup-content bg-white p flex wrap gap center hold">
+            <div class="flex end w-100">
+                <button onclick="closepopup('.popup')">Fermer</button>
+            </div>
+            <form class="flex column v-cente raduis bg-blue p m">
+                    <div class="flex  gap w-100">
+                        <div class="flex column">
+                            <label for="objet">Objet</label>
+                            <input class="input" id="objet" type="text" name="objet" required>
+                        </div>
+                        <div class="flex column">
+                            <label for="email">Email</label>
+                            <input class="input" id="email" type="email" name="email" required>
+                        </div>
+                    </div>
+                    <div class="flex column w-100">
+                        <label for="mes">Message</label>
+                        <textarea class="input" id="mes" name="mes" required></textarea>
+                    </div>
+                    <div class="info p w-2 m danger" style="display: none;">
+                        Commentaire inapproprié detecté
+                    </div>
+                    <div class="info p w-2 m success" style="display: none;">
+                        Commentaire sains, prêt à l'envoi
+                    </div>
+                    <div class="flex end m">
+                        <button id="submit">Envoyer</button>
+                    </div>
+            </form>
+            
+        </div>
+    </div>
+    <div class="flex v-center column font">
+        <div class="bg-home flex column v-end p w-100">
             <div class="bg-ablue"></div>
-            <div class="z-100 text-center">
+            <div class="z-100 text-end">
                 <img src="../ressource/logoedhec.png" class="logo-2">
                 <h2>Groupe EDHEG</h2>
                 <p class="p-style">Ecole Des Hautes Etudes en Gestion</p>
@@ -52,6 +85,20 @@
         <div class="flex between m-w">
             <div class="w-100">
                 <h2 class="text-center font p b-bottom">
+                    Contactez nous
+                </h2>
+                <p class="m text-center p bg-blue">
+                    En cas de questions ou de problèmes, nous vous assurons une réponse claire dans les plus brèfs delais
+                    <button class="b-bottom" onclick="openpopup('.popup')" >Voir formulaire</button>
+                </p>
+                <ul class="flex column gap">
+                    <li>WhatsApp: +2** 68 57 45 **</li>
+                    <li>Tel fix: +2** 07 ** 45 05</li>
+                    <li>Tel portable: +2** 75 55 **</li>
+                </ul>
+            </div>
+            <div class="w-100">
+                <h2 class="text-center font p b-bottom">
                     Notre localisation
                 </h2>
                 <ul class="flex column gap">
@@ -59,42 +106,6 @@
                     <li><h2>San Pedro</h2></li>
                     <li><h2>Bouaké</h2></li>
                 </ul>
-            </div>
-            <div class="w-100">
-                <h2 class="text-center font p b-bottom">
-                    Contactez nous
-                </h2>
-                <p class="m text-center p bg-blue">
-                    En cas de questions ou de problèmes, nous vous assurons une réponse claire dans les plus brèfs delais
-                </p>
-                <ul class="flex column gap">
-                    <li>WhatsApp: +2** 68 57 45 **</li>
-                    <li>Tel fix: +2** 07 ** 45 05</li>
-                    <li>Tel portable: +2** 75 55 **</li>
-                </ul>
-                <div class="flex column v-center gap raduis bg-blue p m">
-                    <div>
-                        <div class="flex gap m">
-                            <div class="flex column">
-                                <label for="objet">Objet</label>
-                                <input class="input" id="objet" type="text" required>
-                            </div>
-                            <div class="flex column">
-                                <label for="email">Email</label>
-                                <input class="input" id="email" type="text" required>
-                            </div>
-                        </div>
-                        <div class="flex column m">
-                            <label for="mes">Message</label>
-                            <textarea class="input" id="mes" required></textarea>
-                        </div>
-    
-                        <div class="flex end">
-                            <button id="comment">Envoyer</button>
-                        </div>
-                    </div>
-    
-                </div>
             </div>
         </div>
         

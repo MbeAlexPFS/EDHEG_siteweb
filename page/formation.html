@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../asset/style.css">
 </head>
 <body>
-    <nav class="flex bottom-shadow between fixed w-100 v-center p-h no-toggled bg-white" id="header">
+    <nav class="flex bottom-shadow between fixed v-center p-h no-toggled bg-black raduis m" id="header">
         <h3 class="font flex v-center hold between w-100 p-w">
             <div class="flex v-center hold"><img class="logo" src="../ressource/logoedhec.png">EDHEG</div>
             <div class="menu-actions p-w">
@@ -20,19 +20,40 @@
             </div>
         </h3>
         <div class="flex gap p-w font v-center links">
-            <a href="/">Accueil</a>
+            <a  href="/">Accueil</a>
             <a href="about.html">A&nbsp;propos</a>
             <a  href="filiar.html">Filières</a>
-            <a class="active" href="">Formations</a>
+            <a class="active" href="formation.html">Formations</a>
             <div class="flex gap v-center hold">
                 <a href="login.html" class="btn">Se&nbsp;connecter</a>
             </div>
         </div>
     </nav>
-    <div class="p-top p flex v-center column font">
-        <div class="bg-home flex column v-center p w-100">
+    <div class="popup" style="display: none;">
+        <div class="popup-content v-center bg-white p flex column wrap gap hold">
+            <div class="flex end w-100">
+                <button onclick="closepopup('.popup')">Fermer</button>
+            </div>
+            <table class="w-100" id="table">
+                <thead>
+                    <th>Formation</th>
+                    <th>Prix</th>
+                    <th>Durée</th>
+                </thead>
+            </table>
+            <div class="flex end w-100">
+                <button class="success" onclick="buy()">Payer</button>
+                <button class="danger" onclick="cancel()">Annuler</button>
+            </div>
+        </div>
+    </div>
+    <div onclick="openpopup('.popup')" class="fixed right bottom logo bg-orange btn">
+        Panier
+    </div>
+    <div class="flex v-center column font">
+        <div class="bg-home flex column v-end p w-100">
             <div class="bg-ablue"></div>
-            <div class="z-100 text-center">
+            <div class="z-100 text-end">
                 <img src="../ressource/logoedhec.png" class="logo-2">
                 <h2>Groupe EDHEG</h2>
                 <p class="p-style">Ecole Des Hautes Etudes en Gestion</p>
@@ -53,73 +74,49 @@
         <div class="bg-white m-w w-100 bg-lgrey">
             <div class="p bg-lgrey flex gap hold ">
                 <img src="../ressource/search-100.png" class="ico">
-                <input type="search" placeholder="rechercher une formation" >
+                <input class="input" type="search" placeholder="rechercher une formation">
             </div>
             <div id="indus">
                 <div class="p flex wrap gap">
                     <div class="flex column gap bg-grey w p raduis">
-                        <h3>IDA - BTS</h3>
+                        <h3 class="title">IDA - BTS</h3>
                         <p>Informatique developpeur d'applications</p>
-                        <button>Voir plus</button>
+                        <p>prix: 10000fcfa - 1mois</p>
+                        <button onclick="command('IDA - BTS',10000, 30)">Ajouter au panier</button>
                     </div>
                     <div class="flex column gap bg-grey w p raduis">
-                        <h3>Genie logiciel - License</h3>
+                        <h3 class="title">Genie logiciel - License</h3>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                        <button>Voir plus</button>
+                        <p>prix: 15000fcfa - 2mois</p>
+                        <button onclick="command('License - Genie logiciel',15000, 60)">Ajouter au panier</button>
                     </div>
                     <div class="flex column gap bg-grey w p raduis">
-                        <h3>Genie logiciel - Master</h3>
+                        <h3 class="title">Genie logiciel - Master</h3>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                        <button>Voir plus</button>
-                    </div>
-                    <div class="flex column gap bg-grey w p raduis">
-                        <h3>Logistique - BTS</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                        <button>Voir plus</button>
-                    </div>
-                    <div class="flex column gap bg-grey w p raduis">
-                        <h3>Logistique - License</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                        <button>Voir plus</button>
-                    </div>
-                    <div class="flex column gap bg-grey w p raduis">
-                        <h3>Logistique - Master</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                        <button>Voir plus</button>
+                        <p>prix: 300000fcfa - 5mois</p>
+                        <button onclick="command('Master - Genie logiciel',300000, 1500)">Ajouter au panier</button>
                     </div>
                 </div>
             </div>
             <div id="terti" class="hidden">
                 <div class="p flex wrap gap">
                     <div class="flex column gap bg-grey w p raduis">
-                        <h3>Ressource Humaine et Communication - BTS</h3>
+                        <h3 class="title">Ressource Humaine et Communication - BTS</h3>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                        <button>Voir plus</button>
+                        <p>prix: 5000fcfa - 20jours</p>
+                        <button onclick="command('BTS - Ressource Humaine et Communication',5000, 20)">Ajouter au panier</button>
                     </div>
                     <div class="flex column gap bg-grey w p raduis">
-                        <h3>Ressource Humaine et Communication - License</h3>
+                        <h3 class="title">Ressource Humaine et Communication - License</h3>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                        <button>Voir plus</button>
+                        <p>prix: 100000fcfa - 5jours</p>
+                        <button onclick="command('License - Ressource Humaine et Communication',100000, 5)">Ajouter au panier</button>
                     </div>
                     <div class="flex column gap bg-grey w p raduis">
-                        <h3>Gestion commerciale - BTS</h3>
+                        <h3 class="title">Gestion commerciale - BTS</h3>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                        <button>Voir plus</button>
-                    </div>
-                    <div class="flex column gap bg-grey w p raduis">
-                        <h3>Gestion commerciale - License</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                        <button>Voir plus</button>
-                    </div>
-                    <div class="flex column gap bg-grey w p raduis">
-                        <h3>Finance Comptablité - BTS</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                        <button>Voir plus</button>
-                    </div>
-                    <div class="flex column gap bg-grey w p raduis">
-                        <h3>Finance Comptablité - License</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                        <button>Voir plus</button>
+                        <p>prix: 8000fcfa - 3mois</p>
+                        <button onclick="command('BTS - Gestion commerciale',8000, 90)">Ajouter au panier</button>
                     </div>
                 </div>
             </div>
